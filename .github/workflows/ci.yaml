@@ -16,6 +16,7 @@ jobs:
     - name: Install Rust
       uses: actions-rs/toolchain@v1
       with:
+        profile: minimal
         components: rustfmt, clippy
 
     - name: Check formatting
